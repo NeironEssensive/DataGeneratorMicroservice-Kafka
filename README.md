@@ -73,14 +73,16 @@ String topic = switch (data.getMeasurementType()) {
     case POWER -> "data-power";
 };
 No if-else chain. No reflection. Just a clean switch expression — Java 17+ style.
+```
 
-🛠️ Tech Stack
-https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white
-https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white
-https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apache-kafka&logoColor=white
-https://img.shields.io/badge/Reactor-6DB33F?style=for-the-badge&logo=react&logoColor=white
-https://img.shields.io/badge/XML_Config-8B8B8B?style=for-the-badge&logo=xml&logoColor=white
-https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white
+## 🛠️ Tech Stack
+
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
+![Apache Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apache-kafka&logoColor=white)
+![Reactor](https://img.shields.io/badge/Reactor-6DB33F?style=for-the-badge&logo=react&logoColor=white)
+![XML](https://img.shields.io/badge/XML_Config-8B8B8B?style=for-the-badge&logo=xml&logoColor=white)
+![Maven](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white)ite
 
 🚀 Quick Run
 bash
@@ -97,6 +99,7 @@ java -jar target/data-generator-microservice.jar
 curl -X POST http://localhost:8081/api/v1/data/test/send \
   -H "Content-Type: application/json" \
   -d '{"measurementTypes": ["TEMPERATURE", "VOLTAGE"], "delayInSeconds": 5}'
+  
 🧪 What I'd Add Next
 Avro schema registry integration — schema evolution for real IoT pipelines
 
