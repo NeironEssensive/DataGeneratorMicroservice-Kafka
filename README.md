@@ -100,7 +100,7 @@ curl -X POST http://localhost:8081/api/v1/data/test/send \
   -H "Content-Type: application/json" \
   -d '{"measurementTypes": ["TEMPERATURE", "VOLTAGE"], "delayInSeconds": 5}'
   
-🧪 What I'd Add Next
+## 🧪 What I'd Add Next
 Avro schema registry integration — schema evolution for real IoT pipelines
 
 Dead Letter Queue for failed produces
